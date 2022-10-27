@@ -1,9 +1,6 @@
 body {
 font-family: 'Roboto', sans-serif;
 position: relative;
-width: 1600px;
-height: 2346px;
-
 background: #FFFFFF;
 }
 
@@ -15,24 +12,57 @@ background: #FFFFFF;
 --bs-white:#FFFFFF;
 }
 
-header {
-width: 1600px;
-height: 80px;
-border-color: #ECECEC;
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+margin: 0;
 }
 
+
+ul,
+li { 
+list-style-type: none;
+}
+
+.container {
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+padding: 0 15px;
+width: 100%;
+}
+
+header {
+height: 80px;
+background: #FFFFFF;
+border-bottom: 1px solid #ECECEC;
+display: flex;
+}
+
+.header-nav {
+display: flex;
+}
+
+
 .logo {
-position: absolute;
-width: 145px;
-height: 31px;
-left: 215px;
-top: 24px;
 font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
 text-decoration:none;
+padding-top: 25px;
+padding-bottom: 24px;
+margin-right: 93px;
 }
 
 .web {
@@ -43,20 +73,19 @@ color: var(--bs-blue);
 color: #000000;
 } 
 
+.header-container {
+display:flex;
+margin: 32px 344px 32px 0;
+}
+
 .header-nav__list {
-width: 281px;
-height: 16px;
-left: 453px;
-top: 32px;
-list-style-type: none;
+display: flex;
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 .header-nav__link {
-position: absolute;
-width: 45px;
-height: 16px;
-left: 453px;
-top: 32px;
+margin-right: 50px;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -80,11 +109,7 @@ color: var(--bs-blue);
 
 
 .header-nav__list_item {
-position: absolute;
-width: 72px;
-height: 16px;
-left: 548px;
-top: 32px;
+margin-right: 50px;;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -96,11 +121,6 @@ color: var(--bs-dark);
 }
 
 .header-nav__list_item1 {
-position: absolute;
-width: 64px;
-height: 16px;
-left: 670px;
-top: 32px;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -138,16 +158,19 @@ color: var(--bs-blue);
 }
 
 .active:visited {
-    color: var(--bs-blue);  
+color: var(--bs-blue);  
 }
+
+.contacts {
+display:flex; 
+display: flex;
+margin-top: -50px;
+justify-content: flex-end;
+} 
 
 
 .contact-mail {
-position: absolute;
-width: 135px;
-height: 16px;
-left: 1078px;
-top: 32px;
+margin-right: 50px;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -165,12 +188,7 @@ color: var(--bs-blue);
 color: var(--bs-blue);
 }
 
-.contact-tell {
-position: absolute;
-width: 122px;
-height: 16px;
-left: 1263px;
-top: 32px; 
+.contact-tell { 
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -190,21 +208,17 @@ color: var(--bs-blue);
     }
 /* +++++++++++++++++++ */
 .banner {
-position: absolute;
-width: 1600px;
+display:flex;
 height: 600px;
-left: 0px;
 top: 80px;
 background: #2F303A;
 }
 
+.banner-container {
+padding: 200px;
+}
 
 .banner-title {
-position: absolute;
-width: 696px;
-height: 120px;
-left: 452px;
-top: 200px;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 900;
@@ -214,14 +228,10 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--bs-white);
+margin-bottom: 30px;
 }
 
 .banner-btn {
-position: absolute;
-width: 216px;
-height: 50px;
-left: 692px;
-top: 380px;
 background: var(--bs-blue);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
@@ -234,6 +244,9 @@ line-height: 1.9;
 align-items: center;
 text-align: center;
 cursor: pointer;
+width: 216px;
+height: 50px;
+margin: 0px 288px;
 }
 
 .banner-btn:hover {
@@ -248,42 +261,42 @@ background: #188CE8;
 }
 /* +++++++++++++++++++ */
 
-.feature {
-list-style-type: none;
-}
+
 
 .peculiarities-title {
 display: none;
 }
 
+.feature {
+display:flex;
+margin: 94px 0;
+}
+
 .feature1 {
-position: absolute;
 width: 270px;
 height: 98px;
 left: 215px;
 top: 774px;
+margin-right: 30px;
 }
 
 .feature2 {
-position: absolute;
 width: 270px;
 height: 74px;
 left: 515px;
 top: 774px;
-
+margin-right: 30px;
 }
 
 .feature3 {
-position: absolute;
 width: 270px;
 height: 74px;
 left: 815px;
 top: 774px;
-
+margin-right: 30px;
 }
 
 .feature4 {
-position: absolute;
 width: 270px;
 height: 98px;
 left: 1115px;
@@ -302,6 +315,7 @@ line-height: 1.1;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--bs-dark);
+margin-bottom: 10px;
 }
 
 .feature1-description,
@@ -318,24 +332,9 @@ color: var(--bs-approx-grey);
 
 /* +++++++++++++++++++++++++++ */
 
-.doing {
-width: 1170px;
-height: 386px;
-left: 215px;
-top: 966px;
 
-}
-
-.box {
-list-style-type: none;
-}
 
 .box-title {
-position: absolute;
-width: 366px;
-height: 42px;
-left: 617px;
-top: 966px;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 700;
@@ -343,27 +342,33 @@ font-size: 36px;
 line-height: 1.2;
 text-align: center;
 color: var(--bs-dark);
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+}
 
+.box {
+display: flex;
+margin-bottom: 94px;
 }
 
 .img-box1 {
-position: absolute;
 width: 370px;
 height: 294px;
 left: 215px;
 top: 1108px;
+margin-right: 30px;
 }
 
 .img-box2 {
-position: absolute;
 width: 370px;
 height: 294px;
 left: 615px;
 top: 1108px;
+margin-right: 30px;
 }
 
 .img-box3 {
-position: absolute;
 width: 370px;
 height: 294px;
 left: 1015px;
@@ -374,8 +379,6 @@ top: 1108px;
 /* +++++++++++++++++++++++ */
 
 .team {
-position: absolute;
-width: 1600px;
 height: 648px;
 left: 0px;
 top: 1446px;
@@ -391,17 +394,18 @@ background: var(--bs-ghost-white);
     text-align: center;
     /* letter-spacing: 0.03em; */
     color: var(--bs-dark);
+    left: 668px;
+    padding-bottom: 50px;
+    padding-top: 94px;
 
 }
 .team-row {
 display: flex;
-list-style-type: none;
 }
 
 .team-card1 {
 width: 270px;
 height: 368px;
-margin-left: 170px;
 top: 1632px;
 margin-right: 30px;
 background: var(--bs-white);
@@ -436,7 +440,6 @@ width: 270px;
 height: 368px;
 left: 1115px;
 top: 1632px;
-margin-right: 30px;
 background: var(--bs-white);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
@@ -450,7 +453,8 @@ font-size: 16px;
 line-height: 1.2;
 text-align: center;
 color: var(--bs-dark);
-
+margin-top: 30px;
+margin-bottom: 10px;
 }
 
 .profession {
@@ -464,30 +468,20 @@ color: var(--bs-approx-grey);
 /* ++++++++++++++++++++++++++++++ */
 
 footer {
-position: absolute;
-width: 1600px;
 height: 252px;
-top: 2094px;
-margin-bottom: 94px;
 background: #2F303A;
 }
 
 .address-container {
-margin-top: 30px;
+padding-top: 60px;
 }
 
 
 .address {
-margin-left: 175px; 
-list-style-type: none;
 font-style: normal;
 }
 
 .logo-address {
-width: 145px;
-height: 31px;
-left: 215px;
-top: 2154px; 
 font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: 700;
@@ -497,7 +491,7 @@ line-height: 1.9;
 letter-spacing: 0.03em;
 color: var(--bs-blue);
 text-decoration:none;
-margin-left: 215px
+margin-left: 35px
 }
 
 .studio1 {
@@ -505,10 +499,6 @@ color: var(--bs-white);
 }
 
 .maps {
-width: 231px;
-height: 21px;
-left: 215px;
-top: 2205px; 
 font-family: 'Roboto', sans-serif;
 font-size: 14px;
 line-height: 1.7;
@@ -528,10 +518,6 @@ text-decoration:none;
 
 
 .address-mail {
-width: 231px;
-height: 21px;
-left: 215px;
-top: 2235px;
 font-family: 'Roboto', sans-serif;
 font-size: 14px;
 line-height: 24px;
@@ -548,11 +534,7 @@ text-decoration:none;
     color: var(--bs-blue);
 }
 
-.address-tell {
-width: 231px;
-height: 21px;
-left: 215px;
-top: 2265px; 
+.address-tell { 
 font-family: 'Roboto', sans-serif;
 font-size: 14px;
 line-height: 1.7;
@@ -571,33 +553,13 @@ color: var(--bs-blue);
 
 /* portfolio */
 
-.body {
-position: relative;
-width: 1600px;
-height: 1880px;
-background: #FFFFFF;
-}
 
-.portfolio {
-width: 1170px;
-height: 1360px;
-left: 215px;
-top: 174px;
-}
+
+
 
 
 .portf {
 display: none;
-}
-
-
-.btn {
-/* position: absolute;
-width: 575px;
-height: 54px;
-left: 512px;
-top: 174px; */
-list-style-type: none;
 }
 
 button:hover,
@@ -607,6 +569,12 @@ background: var(--bs-blue);
 
 }
 
+.btn {
+display: flex;
+justify-content: center;
+margin-bottom: 34px;
+margin-top: 94px;
+}
 
 
 button {
@@ -625,143 +593,82 @@ cursor: pointer;
 }
 
 .btn-active {
-position: absolute; 
-width: 73px;
-height: 38px;
-left: 512px;
-top: 174px; 
-
+margin-right: 8px;
 
 }
 
 .btn1 {
-position: absolute; 
-width: 125px;
-height: 38px;
-left: 593px;
-top: 174px;
-
+margin-right: 8px;
+white-space: nowrap
 }
 
 .btn2 {
-position: absolute; 
-width: 112px;
-height: 38px;
-left: 726px;
-top: 174px;
-
+margin-right: 8px;
 }
 
 .btn3 {
-position: absolute;
-width: 103px;
-height: 38px;
-left: 846px;
-top: 174px;
+margin-right: 8px;
 } 
 
 .btn4{
-position: absolute;
-width: 130px;
-height: 38px;
-left: 957px;
-top: 174px;
 }
-
-
 
 /* project */
 
 .project-row {
-list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 94px;
+justify-content: space-between
 }
 
 .project1 {
-position: absolute;
-width: 370px;
-height: 404px;
-left: 215px;
-top: 262px;
+margin-bottom: 30px;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }
 
 .project2 {
-position: absolute;
-width: 370px;
-height: 404px;
-left: 615px;
-top: 262px;
+margin-bottom: 30px;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }
 
 .project3 {
-position: absolute;
-width: 370px;
-height: 404px;
-left: 1015px;
-top: 262px;
+margin-bottom: 30px;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }
 
 .project4 {
-position: absolute;
-width: 370px;
-height: 404px;
-left: 215px;
-top: 696px;
+margin-bottom: 30px;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }
 
 .project5 {
-position: absolute;
-width: 370px;
-height: 404px;
-left: 615px;
-top: 696px;
+margin-bottom: 30px;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }
 
 .project6 {
-position: absolute;
-width: 370px;
-height: 404px;
-left: 1015px;
-top: 696px;
+margin-bottom: 30px;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }
 
 .project7 {
-position: absolute;
-width: 370px;
-height: 404px;
-left: 215px;
-top: 1130px;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }
 
 .project8 {
-position: absolute;
-width: 370px;
-height: 404px;
-left: 615px;
-top: 1130px;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }
 
 .project9 {
-position: absolute;
-width: 370px;
-height: 404px;
-left: 1015px;
-top: 1130px;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }

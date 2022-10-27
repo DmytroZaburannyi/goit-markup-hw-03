@@ -8,26 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="body">
     <header>
-        <a class="logo" href="index.html"><span class="web">Web</span><span class="studio">Studio</span></a>
+        <div class="header-inner container">
         <nav class="header-nav">
+            <a class="logo" href="index.html"><span class="web">Web</span><span class="studio">Studio</span></a>
+            
             <ul class="header-nav__list">
                 <li class="header-nav__link"><a href="index.html" class="link">Студія</a></li>
                 <li class="header-nav__list_item"><a href="portfolio.html" class="item active">Портфоліо</a></li>
                 <li class="header-nav__list_item1"><a href=".html" class="item1">Контакти</a></li>
             </ul>
+            
         </nav>
-        <div class="contacts">
-               <a href="mailto:info@devstudio.com" class="contact-mail">info@devstudio.com</a>
-               <a href="tell:+380961111111" class="contact-tell">+38 096 111 11 11</a>
-        </div>
+        <ul class="contacts">
+               <li><a href="mailto:info@devstudio.com" class="contact-mail">info@devstudio.com</a></li>
+               <li><a href="tell:+380961111111" class="contact-tell">+38 096 111 11 11</a></li>
+        </ul>
+    </div>
     </header>
+
 <main class="portfolio">
     <section class="project">
-        <h1 class="portf">Портфоліо</h1>
+    <div class="container">
+            <h1 class="portf">Портфоліо</h1>
         <ul class="btn">
         <li class="btn-active"><button type="button">Усі</button></li>
         <li class="btn1"><button  type="button" >Веб-сайти</button></li>
@@ -35,8 +42,9 @@
         <li class="btn3"><button  type="button" >Дизайн</button></li>
         <li class="btn4"><button  type="button" >Маркетинг</button></li>
       </ul>
+    </div>
 
-
+      <div class="container">
             <ul class="project-row">
                 <li class="project1">
                     <img class="img-project1" src="images/project1.jpg" width="370" height="294" alt="project1">
@@ -84,11 +92,13 @@
                     <p class="profession-project">Додаток</p>
                 </li>
           </ul>
+        </div>
+        
     </section>
 </main>
 
     <footer>
-        <div class="address-container">
+        <div class="address-container container">
             <a class="logo-address" href="index.html"><span class="web">Web</span><span class="studio1">Studio</span></a>
             <address>
         <ul class="address">       
